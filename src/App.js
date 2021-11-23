@@ -8,10 +8,10 @@ import AppBar from './components/UserMenu/AppBar';
 import PrivateRoute from './components/UserMenu/PrivateRoute';
 import React from 'react';
 import PublicRoute from './components/UserMenu/PublicRoute';
-const HomeView = lazy(() => import('./components/views/HomeView'));
-const RegisterView = lazy(() => import('./components/views/RegisterView'));
-const LogInView = lazy(() => import('./components/views/LoginView'));
-const ContactView = lazy(() => import('./components/views/ContactView'));
+const HomeView = lazy(() => import('./views/HomeView'));
+const RegisterView = lazy(() => import('./views/RegisterView'));
+const LogInView = lazy(() => import('./views/LoginView'));
+const ContactView = lazy(() => import('./views/ContactView'));
 
 const App = () => {
   const dispatch = useDispatch();

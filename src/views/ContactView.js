@@ -1,11 +1,11 @@
-import s from '../data/data.module.css';
+import s from '../components/data/data.module.css';
 import { useDispatch, useSelector } from 'react-redux';
-import FilterName from '../FilterName';
-import ContactList from '../ContactsList/ContactsList';
-import { getNameFilter, getContacts } from '../../redux/contacts/contacts-selectors';
-import { filterContactSuccess } from '../../redux/contacts/actions';
-import ContactForm from '../ContactForm/ContactForm.jsx';
-import operations from '../../redux/contacts/contacts-operations';
+import FilterName from '../components/FilterName';
+import ContactList from '../components/ContactsList/ContactsList';
+import { getNameFilter, getContacts } from '../redux/contacts/contacts-selectors';
+import { filterContactSuccess } from '../redux/contacts/actions';
+import ContactForm from '../components/ContactForm/ContactForm';
+import operations from '../redux/contacts/contacts-operations';
 
 const ContactView = () => {
   const dispatch = useDispatch();

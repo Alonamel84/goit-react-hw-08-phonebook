@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
-import s from '../ContactForm/ContactForm.module.css';
+import s from '../components/ContactForm/ContactForm.module.css';
 import { useDispatch } from 'react-redux';
-import authOperations from '../../redux/auth/auth-operations';
+import authOperations from '../redux/auth/auth-operations';
 import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 

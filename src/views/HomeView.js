@@ -1,5 +1,5 @@
 import React from 'react';
-import s from '../data/data.module.css';
+import s from '../components/data/data.module.css';
 const HomeView = () => {
   return (
     <div>
