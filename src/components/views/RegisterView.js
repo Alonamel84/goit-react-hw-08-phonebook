@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import s from '../ContactForm/ContactForm.module.css';
-// import operations from '../../redux/contacts/contacts-operations';
 import { useDispatch } from 'react-redux';
 import authOperations from '../../redux/auth/auth-operations';
-
+import Button from 'react-bootstrap/Button';
+import 'bootstrap/dist/css/bootstrap.min.css';
 const RegisterView = () => {
   const dispatch = useDispatch();
   const [password, setPassword] = useState('');
@@ -77,9 +77,9 @@ const RegisterView = () => {
           />
         </label>
 
-        <button className={s.addButton} type="submit">
+        <Button variant="success" type="submit">
           Register
-        </button>
+        </Button>
       </form>
     </>
   );

@@ -1,13 +1,3 @@
-.delButton {
-  display: block;
-  cursor: pointer;
-  background-color: red;
-  padding: 9px;
-  color: azure;
-  font-size: 15px;
-  width: 90px;
-  margin-left: 10px;
-}
 .contactItem {
   list-style: none;
   font-size: 20px;

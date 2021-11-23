@@ -1,11 +1,13 @@
 import s from '../ContactItem/ContactItem.module.css'
 import PropTypes from 'prop-types';
+import Button from 'react-bootstrap/Button';
+import 'bootstrap/dist/css/bootstrap.min.css';
 const ContactItem = ({ name,  number, onDelete,id }) => {
   return (
 
         <>
             <li className={s.contactItem} id={ id}>{name} {number}
-            <button className={ s.delButton} type='button' onClick={() => { onDelete(id) }}>Delete</button>
+            <Button variant="danger" type='button' onClick={() => { onDelete(id) }}>Delete</Button>
            </li>
             </>
     )

@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+body {
+  background-image: url(./screenshot-2020-06-12-001.jpg);
+  /* background-image: url(./pngwing.com.png); */
+  background-repeat: no-repeat;
+  background-color: rgba(214, 206, 206, 0.295);
+  background-size: cover;
+  background-attachment: fixed;
+}

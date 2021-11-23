@@ -20,7 +20,6 @@ const register = createAsyncThunk('auth/register', async credentials => {
     console.log(error);
   }
 });
-// export default register;
 
 const logIn = createAsyncThunk('auth/login', async credentials => {
   try {
@@ -42,10 +41,6 @@ const logOut = createAsyncThunk('auth/logout', async () => {
 const getCurrentUser = createAsyncThunk('auth/refresh', async (_, thunkAPI) => {
   const state = thunkAPI.getState();
   const persisitedToken = state.auth.token;
-  // console.log(
-  //   '🚀 ~ file: auth-operations.js ~ line 45 ~ getCurrentUser ~ persisitedToken',
-  //   persisitedToken,
-  // );
   if (persisitedToken === null) {
     // return alert;
     return thunkAPI.rejectWithValue();

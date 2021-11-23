@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import s from '../ContactForm/ContactForm.module.css';
-// import operations from '../../redux/contacts/contacts-operations';
 import { useDispatch } from 'react-redux';
-// import logIn from '../../redux/auth/auth-operations';
 import authOperations from '../../redux/auth/auth-operations';
+import Button from 'react-bootstrap/Button';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const LogInView = () => {
   const dispatch = useDispatch();
@@ -60,17 +60,14 @@ const LogInView = () => {
           />
         </label>
 
-        <button className={s.addButton} type="submit">
+        <Button variant="success" type="submit">
           Log In
-        </button>
+        </Button>
       </form>
     </>
   );
 };
 
-// const mapDispatchToProps = {
-//   addContact,
-// };
 export default LogInView;
 
 // RegisterView.propTypes = {

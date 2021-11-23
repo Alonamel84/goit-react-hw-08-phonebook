@@ -12,11 +12,6 @@ const ContactView = () => {
   const contacts = useSelector(getContacts);
   const manualFilter = useSelector(getNameFilter);
 
-  //   useEffect(() => {
-  //     console.log('hello');
-  //     dispatch(authOperations.getCurrentUser());
-  //   }, []);
-
   function filterName(e) {
     e.preventDefault();
     dispatch(filterContactSuccess(e.currentTarget.value));
@@ -36,15 +31,11 @@ const ContactView = () => {
 
   return (
     <div className={s.container}>
-      {/* <PrivateRoute path="/contacts"> */}
-      {/* <Route path="/contacts"> */}
       <h1 className={s.title}>Phonebook</h1>
       <ContactForm contact={contacts}></ContactForm>
       <h2 className={s.title}>Contacts</h2>
       <FilterName onChange={filterName}></FilterName>
       <ContactList filterContacts={filterContacts} onDelete={onDelete}></ContactList>
-      {/* </PrivateRoute> */}
-      {/* </Route> */}
     </div>
   );
 };

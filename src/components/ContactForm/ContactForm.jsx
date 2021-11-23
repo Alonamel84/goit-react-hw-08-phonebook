@@ -4,6 +4,8 @@ import s from '../ContactForm/ContactForm.module.css'
 import  operations   from '../../redux/contacts/contacts-operations';
 import {  useDispatch } from 'react-redux';
 import shortid from 'shortid';
+import Button from 'react-bootstrap/Button';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const ContactForm = ({ contact }) => {
   const dispatch = useDispatch();
@@ -60,7 +62,7 @@ const ContactForm = ({ contact }) => {
             />
           </label>
 
-                    <button className={ s.addButton} type="submit">Add contact</button>
+                    <Button variant="success"  type="submit">Add contact</Button>
         </form>
 
             </>

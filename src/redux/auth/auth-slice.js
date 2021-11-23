@@ -11,8 +11,6 @@ const authSlice = createSlice({
   initialState,
   extraReducers: {
     [authOperations.register.fulfilled](state, action) {
-      //   console.log('state', state);
-      //   console.log('action', action);
       state.user = action.payload.user;
       state.token = action.payload.token;
       state.isLoggedIn = true;
@@ -28,7 +26,7 @@ const authSlice = createSlice({
       state.isLoggedIn = false;
     },
     [authOperations.logIn.rejected](state, action) {
-      alert('user exist');
+      alert('Please check your login and password and try again');
       //   state.user = { name: null, email: null };
       state.isLoggedIn = false;
     },

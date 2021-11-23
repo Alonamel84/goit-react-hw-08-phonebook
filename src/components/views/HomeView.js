@@ -1,8 +1,9 @@
 import React from 'react';
+import s from '../data/data.module.css';
 const HomeView = () => {
   return (
     <div>
-      <h1>Welcome to Phonebook app</h1>
+      <h1 className={s.titleMain}>Welcome to Phonebook!</h1>
     </div>
   );
 };
